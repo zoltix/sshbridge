@@ -4,3 +4,4 @@ Host hetzner-https
     ProxyCommand /usr/local/bin/sshbridge stdio --url wss://con.lli.be/ssh
     ServerAliveInterval 30
     ServerAliveCountMax 3
+
