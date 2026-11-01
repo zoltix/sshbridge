@@ -1,0 +1,12 @@
+[package]
+name = "sshbridge"
+version = "0.2.0"
+edition = "2021"
+description = "Small SSH-over-WebSocket client for ProxyCommand and local TCP forwarding"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+futures-util = "0.3"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.24", features = ["connect", "rustls-tls-webpki-roots"] }

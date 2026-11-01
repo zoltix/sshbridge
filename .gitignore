@@ -1,0 +1,14 @@
+
+# Rust
+/target/
+*.exe
+*.pdb
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Éditeurs
+.idea/
+.vscode/

@@ -1,0 +1,6 @@
+Host hetzner-https
+    HostName con.lli.be
+    User lli
+    ProxyCommand /usr/local/bin/sshbridge stdio --url wss://con.lli.be/ssh
+    ServerAliveInterval 30
+    ServerAliveCountMax 3

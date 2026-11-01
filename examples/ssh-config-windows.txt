@@ -1,0 +1,10 @@
+# Put in C:\Users\<your-user>\.ssh\config
+# Uses Windows OpenSSH. No separate tunnel process or port required.
+Host hetzner-https
+    HostName con.lli.be
+    User lli
+    IdentityFile C:/Users/<your-user>/.ssh/id_ed25519
+    IdentitiesOnly yes
+    ProxyCommand C:/lli/tools/sshbridge.exe stdio --url wss://con.lli.be/ssh
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
